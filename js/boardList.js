@@ -159,6 +159,7 @@ const sampleBoardList = [
 
         const location_a = document.querySelectorAll(".location_a");
 
+        // a 링크의 동작을 잠시 막고 조회수 증가 시켜서 localStorage의 boardList 갱신
         location_a.forEach(link =>{
             link.addEventListener("click", function(e){
                 e.preventDefault();

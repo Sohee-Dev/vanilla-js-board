@@ -67,6 +67,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 function redirectToPageIfNotLoggedIn(page) {
     // 만약 로그인된 사용자가 없으면 지정된 페이지로 이동
     if (user === null) {
+        alert("로그인이 필요합니다");
         window.location.href = `${page}.html`;
     }
 }
