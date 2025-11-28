@@ -1,10 +1,10 @@
-# README — LocalStorage 기반 게시판 프로젝트
+# README — LocalStorage 기반 게시판 제작해보기(JS 학습)
 
-## 프로젝트 소개
+## 소개
 
 브라우저의 LocalStorage / SessionStorage를 활용해 구현한
 
-로그인, 회원가입, 게시판 CRUD 기능 프로젝트입니다.
+로그인, 회원가입, 게시판 CRUD 기능 구현해보기 입니다.
 
 별도의 서버 없이 동작하며 모든 데이터는 클라이언트 브라우저에 저장됩니다.
 
@@ -119,50 +119,13 @@ Live Server(VSCode 확장) 사용
 - index.html → "Open with Live Server" 실행
 ---
 
-## GitHub Pages에서 실행하기
+## 2) 바로 실행하기(GitHub Pages / 링크 클릭)
 
-### 1) GitHub Pages 활성화
-
-1. GitHub 저장소로 이동
-2. Settings → Pages 이동
-3. Deploy from branch 선택
-4. branch: `main` / folder: `/root`
-5. 저장 후 GitHub Pages URL이 생성됨
-
-### 2) 접근 URL 형태
-
-GitHub Pages는 아래 형식으로 제공됩니다:
-
-```
-https://<USERNAME>.github.io/<REPO>/
-```
-
-### 3) README에서 바로 접근 링크
-
-아래 링크는 형식 예시입니다.
-
-저장소 정보로 `<USERNAME>` 과 `<REPO>`만 바꿔 사용하면 됩니다.
-
-```
-[프로젝트 실행하기](https://<USERNAME>.github.io/<REPO>/sign-in.html)
-```
-
-추천 시작 페이지:
-
-```
-/sign-in.html
-```
-
-예시 형태:
-
-```markdown
-### ▶ GitHub Pages 실행
-프로젝트 시작 페이지:
-[GitHub Pages에서 실행하기](https://Sohee-Dev.github.io/vanilla-js-board/index.html)
-```
+[Link ->](https://Sohee-Dev.github.io/vanilla-js-board/index.html)
 
 ---
 ## 비고
 
 - 이 프로젝트는 순수 HTML + JavaScript만으로 동작합니다.
 - 이미지 업로드는 Base64 형식으로 LocalStorage에 저장되기 때문에 저장 공간을 초과할 수 있으며, 5MB 제한을 적용하고 있습니다.
+- 용량이 넘어갈 경우 상단의 localStorage 비우기 버튼을 눌러 저장소를 비워주세요
