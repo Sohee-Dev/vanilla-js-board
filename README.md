@@ -1,4 +1,4 @@
-# README — LocalStorage 기반 게시판 제작해보기(JS 학습)
+# vanilla-js만을 사용한 LocalStorage 기반 게시판 제작(학습용)
 
 ## 소개
 
