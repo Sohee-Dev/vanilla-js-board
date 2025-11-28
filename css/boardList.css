@@ -1,0 +1,141 @@
+/* 전체 페이지 컨테이너 */
+.content-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.board-box {
+    display: flex;
+	flex-direction: column;
+}
+.head{
+    border-top: 1px solid black;
+    font-weight: bold;
+}
+
+.head, 
+.board {
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* 제목, content 공간 맞추기 */
+
+.head-1,
+.board-1 {
+	/* flex box 고정 너비 설정 */
+    flex: 0 0 80px;
+}
+
+.head-2,
+.board-2 {
+	flex: 1; /* 가변 너비 */
+	text-align: left;
+	padding-left: 10px;
+    padding-right: 10px;
+}
+
+.head-3,
+.board-3,
+.head-4,
+.board-4 {
+	flex: 0 0 100px; /* 고정 너비 */
+}
+
+.head-5,
+.board-5 {
+	flex: 0 0 100px; /* 고정 너비 */
+}
+
+/* 페이지네이션 전체 영역 */
+.page-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* ◀, ▶ 버튼 */
+.page-box .left,
+.page-box .right {
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  transition: 0.2s;
+}
+
+.page-box .left:hover,
+.page-box .right:hover {
+  background-color: #e0e0e0;
+}
+
+/* 번호 묶음 */
+.num-box {
+  display: flex;
+  gap: 6px;
+}
+
+/* 개별 번호 */
+.num-box .num {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #f6f6f6;
+  transition: 0.2s;
+  border: 1px solid #ddd;
+}
+
+/* 호버 */
+.num-box .num:hover {
+  background-color: #e9e9e9;
+}
+
+/* JS에서 현재페이지에 적용하는 style과 매칭 */
+.num-box .num.active {
+  background-color: #cb6161 !important;
+  color: #fff;
+  font-weight: bold;
+}
+
+.write-button-box {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.insert-btn-box {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.insertBtn {
+    padding: 6px 13px;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    background-color: #aa5252; /* 초록색 */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+	margin-top: 20px;
+}
+
+.insertBtn:hover {
+    background-color: #7e3a3a;
+    transform: translateY(-1px);
+}
+
+.arrow.hide {
+    visibility: hidden !important;
+}
